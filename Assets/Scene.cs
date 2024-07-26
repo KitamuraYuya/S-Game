@@ -1,15 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Scene : MonoBehaviour
 {
-    void Update()
+   public void Laod(string SceneName)
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            SceneManager.LoadScene("GemeScene");
-        }
+        SceneManager.LoadScene(SceneName);
     }
 }
