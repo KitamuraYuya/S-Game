@@ -1,15 +1,14 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float _moveSpeed = 5f;
-    [SerializeField] float _jumpSpeed = 5f;
+    [SerializeField] public float _jumpSpeed = 5f;
     [SerializeField] float _gravityDrag = .5f;
     Rigidbody2D _rb = default;
     bool _isGrounded = false;
-    Vector3 _itemPosition = default;
+    Vector3 _initialPosition = default;
     List<ItemBase> _itemList = new List<ItemBase>();
     Animator _anim = default; 
     SpriteRenderer _sprite = default;
@@ -20,7 +19,7 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _sprite = GetComponent<SpriteRenderer>();
-        _itemPosition = this.transform.position;
+        _initialPosition = this.transform.position;
     }
 
     void Update()
@@ -54,7 +53,7 @@ public class PlayerController : MonoBehaviour
         
         if (this.transform.position.y < -10)
         {
-            this.transform.position = _itemPosition;
+            this.transform.position = _initialPosition;
         }
     }
 
