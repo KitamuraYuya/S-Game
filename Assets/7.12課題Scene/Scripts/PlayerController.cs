@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     bool _isGrounded = false;
     Vector3 _initialPosition = default;
     List<ItemBase> _itemList = new List<ItemBase>();
-    Animator _anim = default; 
+    Animator _anim = default;
     SpriteRenderer _sprite = default;
     float _h = 0;
 

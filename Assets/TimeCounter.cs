@@ -30,7 +30,6 @@ public class TimeCounter : MonoBehaviour
         
         if (countdown <= 0)
         {
-
             if (countdown + time <= 0)
             {
                 SceneManager.LoadScene("GameOverScene");

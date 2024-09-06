@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text _lifeText = default;
     [SerializeField] Text _scoreText = default;
 
-    public static int _score = 0;
+    int _score = 0;
     int _life = 0;
     void Start()
     {
