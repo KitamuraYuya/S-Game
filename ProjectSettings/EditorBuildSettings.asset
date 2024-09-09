@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: "Assets/7.22\u8AB2\u984CScenes/NameScene.unity"
     guid: 674f499ff1bc74b43a3dca6b1d9a94c1
   - enabled: 1
-    path: "Assets/7.12\u8AB2\u984CScene/GameScene.unity"
+    path: "Assets/7.12\u8AB2\u984CScene/Game.unity"
     guid: 4f3af409e3ca177499e5b65969c520da
+  - enabled: 1
+    path: Assets/FScene.unity
+    guid: 631d630d86d939f48b6a115c93782347
+  - enabled: 1
+    path: Assets/GameScene.unity
+    guid: 77766c851f7be5d499302719deabe9c2
   m_configObjects: {}
